@@ -1,0 +1,10 @@
+# Set JavaScript as the primary language
+* linguist-language=JavaScript
+
+# Mark build files and dependencies as vendored (ignored for language stats)
+node_modules/* linguist-vendored
+dist/* linguist-vendored
+build/* linguist-vendored
+
+# Ignore JSON config files from affecting the language stats
+*.json linguist-vendored
